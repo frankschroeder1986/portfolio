@@ -1,0 +1,148 @@
+header{
+    padding: 100px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.header-text{
+    width: 850px;
+}
+
+.circle{
+    height: 400px;
+    width: 400px;
+
+    max-height: 80vw;
+    max-width: 80vw;
+    overflow: hidden;
+    border-radius: 100%;
+    border: 10px solid var(--main-brand-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle img{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    margin-bottom: 120px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    position: relative;
+    padding: 3px;
+    
+}
+
+
+
+nav a:hover{
+    color: var(--text-color);
+}
+
+
+nav a::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: var(--main-brand-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 150ms ease-in-out;
+}
+
+nav a:hover::after{
+    width: 100%;
+}
+
+#toggle-button{
+    display: none;
+}
+
+label[for="toggle-button"] span{
+    display: none;
+}
+
+
+label:hover[for="toggle-button"] span:nth-child(2){
+   
+    transform: translate(10px, 3px);
+    background-color: var(--main-brand-color);
+}
+
+@media(max-width:800px)
+{
+    nav{
+        position: absolute;
+        top:0;
+        left:0;
+        background-color: black;
+        padding: 15px;
+        border-radius: 0 0 25px 0;
+    }
+    nav ul{
+        display: none;
+        flex-direction: column;
+    }
+    #toggle-button:checked ~ ul{
+        display: flex;
+    }
+
+
+
+
+
+    #toggle-button:checked ~ label[for="toggle-button"] span:nth-child(1){
+   
+        transform: translate(4px, 0px) rotate(45deg);
+    }
+
+    #toggle-button:checked ~ label[for="toggle-button"] span:nth-child(3){
+   
+        transform: translate(1px, 5px) rotate(-45deg);
+    }
+
+    #toggle-button:checked ~ label[for="toggle-button"] span:nth-child(2){
+   
+        opacity: 0;
+    transform: translate(15px);
+    }
+
+#toggle-button:checked ~ label:hover[for="toggle-button"] span{
+   
+    background-color: var(--main-brand-color);
+}
+
+
+
+
+    label[for="toggle-button"] span{
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background-color: white;
+        border-radius: 6px;
+        z-index: 1;
+        transform: translate(0px ,3px);
+        transform-origin: 0 0;
+        transition: 0.4s;
+    }
+    
+}
