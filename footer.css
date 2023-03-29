@@ -32,7 +32,7 @@ footer li{
     size: 10px;
 }
 
-a{
+footer a{
     background-color: var(--main-brand-color);
     width: min-content;
    
@@ -44,7 +44,7 @@ a{
     transition: 150ms ease-in-out;
 
 }
-a:hover{
+footer a:hover{
 background: transparent;
 }
 .grid-container{
