@@ -1,11 +1,18 @@
 <?php
 
-$emp = "frankschroeder1986@gmail.com";
-$betreff = "neu";
-$from = "From: Frank <frank.schroeder24@gmx.de>\n";
-$from .= "Reply-To: frankschroeder1986@gmail.com\n";
-$from .= "Content-Type: text/html\n";
-$text = "<h1> HTMLWORLDS huhu</h1>";
+ $name = $_POST["name"];
+ $email = $_POST["email"];
+ $message = $_POST["message"];
 
+ if( mail("frankschroeder1986@gmail.com", "Portfolio", $message, "From: Absender <" .$email. ">"))
+ {
+    echo "erfolgreich gesendet";
+ }
 
-mail($emp, $betreff, $text, $from);
+ else{
+    "hat nicht geklappt";
+ }
+
+ echo "error";
+
+?>
