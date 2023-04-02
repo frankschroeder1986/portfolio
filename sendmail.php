@@ -1,8 +1,6 @@
 <?php
 
- $name = $_POST["name"];
- $email = $_POST["email"];
- $message = $_POST["message"];
+
 
 $email_from = "absender@domain.de";   //Absender falls keiner angegeben wurde
 $sendermail_antwort = true;      //E-Mail Adresse des Besuchers als Absender. false= Nein ; true = Ja
