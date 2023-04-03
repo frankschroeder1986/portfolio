@@ -1,0 +1,49 @@
+#Skills{
+    background-color: var( --primary-color);
+    margin-bottom: 100px;
+
+    
+}
+
+#Skills h2{
+    margin-top: 50px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    color: var(--main-brand-color);
+}
+
+#Skills h3{
+    
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.stars{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.bewertung{
+   
+        height: 30px;
+        width: 30px;
+        background-color: var(--main-brand-color);
+        border-radius: 30%;
+        margin: 5px;
+    
+}
+
+.bewertungBack{
+   
+    height: 30px;
+    width: 30px;
+    background-color: var(--main-color);
+    border-radius: 30%;
+    margin: 5px;
+
+}
+
