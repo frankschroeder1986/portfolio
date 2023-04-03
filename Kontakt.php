@@ -1,8 +1,8 @@
 <?php
 
-$email = $_POST["email"]
-$name = $_POST["name"]
-$nachricht = $_POST["nachricht"]
+$email = $_POST["email"];
+$name = $_POST["name"];
+$nachricht = $_POST["nachricht"];
 
 $empfaenger = 'frankschroeder1986@gmail.com'; // Ihre eigene E-Mail-Adresse hier einfügen
 $header = 'From: webmaster@example.com' . "\r\n" .
